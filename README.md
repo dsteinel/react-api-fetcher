@@ -5,19 +5,20 @@ This is a small application to search for artist album covers.
 
 ### Install
 
-With Npm
+with Npm
 
 	npm install
 
-or with yarn
+...or with yarn
 
 	yarn install
 
 ### Usage
+Run from the project root
 
 	npm run dev
 
-test it in your browser:
+test it in your browser
 
 	localhost:8080
 
@@ -28,3 +29,5 @@ test it in your browser:
 If you want to minify the code run
 
 	npm run production
+
+If you want to do some visual regression testing, you first have to install [BackstopJS](https://github.com/garris/BackstopJS)
