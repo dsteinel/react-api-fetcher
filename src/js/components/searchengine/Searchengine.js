@@ -19,7 +19,6 @@ class Searchengine extends React.Component {
 	}
 
 	componentWillMount() {
-		// Called after the component has been rendered into the page
 		this._onSearch(this.props.initialArtist);
 	}
 
@@ -59,7 +58,6 @@ class Searchengine extends React.Component {
 					<h2>Irghs, we were not able to get any datas. t('_'t) => try again later, sorry!</h2>
 				);
 			}
-
 
 			return (
 				<div class="search-engine">
