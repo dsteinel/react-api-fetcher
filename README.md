@@ -24,14 +24,7 @@ and test it in your browser
 
 
 
-### Addition
-
-If you want to minify the code run
-
-	npm run production
-
-
-#### Visual Regression testing
+### Visual Regression testing
 
 If you want to do some visual regression testing, you first have to install [BackstopJS](https://github.com/garris/BackstopJS) globally with
 
