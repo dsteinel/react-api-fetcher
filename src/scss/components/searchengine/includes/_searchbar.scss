@@ -1,0 +1,71 @@
+.search-bar {
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 400px;
+
+	input {
+		width: 100%;
+		height: 50px;
+		background-color: $searchbar-input-background-color;
+		border: 0;
+		outline: none;
+		color: $searchbar-input-text-color;
+		font-size: 1em;
+		line-height: 1.4;
+		text-indent: 20px;
+	}
+
+	button {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		right: 1em;
+		width: 40px;
+		height: 40px;
+		background: $searchbar-button-background-color;
+		border: 0;
+		outline: none;
+		border-radius: 100%;
+		transform: translateY(-50%);
+		transition: all 0.3s cubic-bezier(0.3, 0.4, 0.3, 1.4);
+
+		&:focus,
+		&:hover {
+			height: 50px;
+			border-radius: 0;
+		}
+
+		span {
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			transform: rotateZ(-45deg);
+
+			&:before,
+			&:after {
+				content: "";
+				speak: none;
+				position: absolute;
+			}
+
+			&:before {
+				top: 23px;
+				left: 12px;
+				width: 3px;
+				height: 8px;
+				background: $searchbar-input-text-color;
+			}
+
+			&:after {
+				top: 6px;
+				left: 5px;
+				width: 11px;
+				height: 11px;
+				border: 3px solid $searchbar-input-text-color;
+				border-radius: 50%;
+			}
+		}
+	}
+}

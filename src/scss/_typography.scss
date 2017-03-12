@@ -1,0 +1,15 @@
+body,
+html {
+	font-family: $font-family-primary;
+	font-size: 14px;
+}
+
+h1 {
+	color: $default-headline-color;
+	font-size: 34px;
+}
+
+a {
+	color: $default-link-color;
+	text-decoration: none;
+}
